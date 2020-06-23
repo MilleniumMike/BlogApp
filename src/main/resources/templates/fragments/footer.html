@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div th:fragment="footer">
+
+    <hr/>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <span sec:authorize="isAuthenticated()">
+                | Logged user: <span sec:authentication="name"></span> |
+                Roles: <span sec:authentication="principal.authorities"></span> |
+                <a th:href="@{/logout}">Sign Out</a>
+            </span>
+
+                <div>
+                    <p class="text-center">Developed by MilleniumMike</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script th:src="@{webjars/bootstrap/4.3.1/js/bootstrap.min.js}"
+            type="text/javascript"></script>
+
+</div>
+</body>
+</html>
