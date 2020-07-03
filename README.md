@@ -2,7 +2,7 @@
 ## Описание приложения блоги
 
 Тестовое задание по созданию блога с использованием Spring Boot.
-** Данные находится в памяти, для их хранения используется **H2.**
+Данные находятся в памяти, для их хранения используется H2.
 
 В приложении присутствует возможность регистрации.
 
@@ -49,19 +49,4 @@ $ mvn test
 
 Интерфейс базы данных H2:
 для того, чтобы в него попасть, нужно перейти по ссылке http://localhost:8080/h2-console
-
-## Скриншоты
-
-**Страница регистрации**
-
-![Login and registration page](screenshots/RegistrationPage.jpg "Login and registration page")
-
-
-**Страница с блогами**
-
-![Blog page](screenshots/UnregisteredViewOnPosts.jpg "Unregistered View")
-
-**Страница с блогами и кнопка создать пост**
-
-![Blog and make post](screenshots/FrontPage.jpg "Blogs and make post")
 
